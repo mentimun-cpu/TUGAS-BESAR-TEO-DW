@@ -14,7 +14,7 @@
 | Ketut Sumantre | 4524210048 | 
 | Farhan Ridwan Badawi | 4524210037 |
 | Bunga Putri Nuriman | 4524210021 | 
-| lilis | 4524210055 |
+| lilis | 4524210051 |
 
 ## 🎯 Tugas dan Pembagian Kerja
 
