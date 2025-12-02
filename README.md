@@ -25,7 +25,7 @@
 - [ ] 
 
 ### [Ketut Sumantre]
-- [ ] 
+- [x] Pembuatan themeplate HTML
 
 ### [Farhan Ridwan Badawi]
 - [ ]
@@ -104,8 +104,8 @@ project-folder/
 
 ### Progress
 - [x] Planning & Research
-- [ ] Wireframing
-- [ ] HTML Structure
+- [x] Wireframing
+- [x] HTML Structure
 - [ ] CSS Styling
 - [ ] JavaScript Functionality
 - [ ] Testing
@@ -116,12 +116,6 @@ project-folder/
 - [Challenge yang dihadapi 2]
 - [Challenge yang dihadapi 3]
 
-## 📞 Kontak
-
-Untuk pertanyaan lebih lanjut, hubungi:
-- **Email:** [email@example.com]
-- **GitHub Repository:** [link-repository]
-
 ---
 
-**© 2024 [Nama Kelompok]. All rights reserved.**
+**© 2025 [Nama Kelompok]. All rights reserved.**
