@@ -31,12 +31,12 @@ document.querySelectorAll("#nav-menu button").forEach(btn => {
 // MENU KOPI
 // ============================
 const menuList = [
-  { name: "Espresso", price: 25000, img: "foto_menu_kopi/menu_ekspresso.jpg" },
-  { name: "Cappuccino", price: 30000, img: "foto_menu_kopi/menu_capucino.jpg" },
-  { name: "Latte", price: 28000, img: "foto_menu_kopi/menu_kopilate.jpg" },
-  { name: "Mocha", price: 32000, img: "foto_menu_kopi/menu_kopimocha.jpg" },
-  { name: "Americano", price: 22000, img: "foto_menu_kopi/menu_americano.jpg" },
-  { name: "Macchiato", price: 29000, img: "foto_menu_kopi/menu_kopimacchiato.jpg" }
+  { name: "Espresso", price: 25000, img: "images/foto_menu_kopi/menu_ekspresso.jpg" },
+  { name: "Cappuccino", price: 30000, img: "images/foto_menu_kopi/menu_capucino.jpg" },
+  { name: "Latte", price: 28000, img: "images/foto_menu_kopi/menu_kopilate.jpg" },
+  { name: "Mocha", price: 32000, img: "images/foto_menu_kopi/menu_kopimocha.jpg" },
+  { name: "Americano", price: 22000, img: "images/foto_menu_kopi/menu_americano.jpg" },
+  { name: "Macchiato", price: 29000, img: "images/foto_menu_kopi/menu_kopimacchiato.jpg" }
 ];
 
 const menuContainer = document.getElementById("menu-items");

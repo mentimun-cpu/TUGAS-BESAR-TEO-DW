@@ -10,18 +10,15 @@
 
 <body class="bg-gray-100 font-sans">
 
-  <!-- NAVBAR -->
   <nav class="bg-white shadow-md fixed w-full z-10">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
 
-      <!-- Logo -->
       <div class="flex items-center space-x-3">
-        <img src="foto_lainnya/logokopi.jpg" 
+        <img src="images/foto_lainnya/logokopi.jpg" 
              class="w-12 h-12 md:w-14 md:h-14 object-cover rounded-full" alt="Logo">
         <span class="font-bold text-xl md:text-2xl text-gray-800">CoffeeBean</span>
       </div>
 
-      <!-- Menu Desktop -->
       <div class="hidden md:flex items-center space-x-6">
         <ul class="flex space-x-6 font-medium text-gray-700">
           <li><button onclick="showSlide('home')" class="hover:text-yellow-600 transition">Home</button></li>
@@ -29,23 +26,20 @@
           <li><button onclick="showSlide('about')" class="hover:text-yellow-600 transition">About</button></li>
         </ul>
 
-        <!-- Cart Desktop -->
         <button id="cart-button" class="relative ml-4">
-          <img src="foto_lainnya/keranjang.jpg" class="w-8 h-8 object-contain">
+          <img src="images/foto_lainnya/keranjang.jpg" class="w-8 h-8 object-contain">
           <span id="cart-count-badge"
                 class="absolute -top-2 -right-2 bg-yellow-400 text-black rounded-full w-5 h-5 flex items-center justify-center text-xs">0</span>
         </button>
       </div>
 
-      <!-- Mobile Menu -->
       <div class="flex items-center md:hidden space-x-3">
         <button id="cart-button-mobile" class="relative">
-          <img src="foto_lainnya/keranjang.jpg" class="w-6 h-6 object-contain">
+          <img src="images/foto_lainnya/keranjang.jpg" class="w-6 h-6 object-contain">
           <span id="cart-count-badge-mobile"
             class="absolute -top-2 -right-2 bg-yellow-400 text-black rounded-full w-4 h-4 flex items-center justify-center text-xs">0</span>
         </button>
 
-        <!-- Hamburger -->
         <button id="hamburger" class="flex flex-col justify-between w-6 h-6">
           <span class="h-0.5 bg-gray-700 rounded transition-all"></span>
           <span class="h-0.5 bg-gray-700 rounded transition-all"></span>
@@ -54,7 +48,6 @@
       </div>
     </div>
 
-    <!-- Dropdown Mobile -->
     <ul id="nav-menu" class="hidden bg-white shadow-md px-4 py-4 space-y-2 font-medium text-gray-700 md:hidden">
       <li><button data-target="home" class="block w-full text-left hover:text-yellow-600">Home</button></li>
       <li><button data-target="menu" class="block w-full text-left hover:text-yellow-600">Menu</button></li>
@@ -62,7 +55,6 @@
     </ul>
   </nav>
 
-  <!-- HOME -->
   <section id="home" class="slide pt-36 bg-cover bg-center relative"
            style="background-image: url('foto_lainnya/kopibg.jpg');">
     <div class="absolute inset-0 bg-black/60"></div>
@@ -76,7 +68,6 @@
     </div>
   </section>
 
-  <!-- MENU -->
   <section id="menu" class="slide bg-yellow-50 py-20 pt-36 hidden">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold text-gray-800 mb-10">Menu Kopi</h2>
@@ -84,7 +75,6 @@
     </div>
   </section>
 
-  <!-- TEMPLATE MENU (styling sudah lengkap di HTML) -->
   <template id="menu-template">
     <div class="card p-6 bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
       <img class="menu-img mb-4 rounded-lg w-full h-48 object-cover">
@@ -98,7 +88,6 @@
     </div>
   </template>
 
-  <!-- ORDER SECTION -->
   <section id="order" class="slide bg-white py-20 pt-36 hidden text-center">
     <h2 class="text-3xl font-bold text-gray-800 mb-6">Keranjang Pesanan</h2>
     <p class="text-gray-600 mb-6">Jumlah item: <span id="cart-count">0</span></p>
@@ -109,13 +98,11 @@
     </button>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="slide bg-white py-20 pt-36 hidden text-center">
     <h2 class="text-3xl font-bold text-gray-800 mb-6">Tentang Kami</h2>
     <p class="text-gray-600 max-w-2xl mx-auto">CoffeeBean hadir untuk pengalaman kopi terbaik.</p>
   </section>
 
-  <!-- JS -->
   <script src="script.js"></script>
 
 </body>
