@@ -86,15 +86,11 @@
 ## 📁 Struktur Projek
 
 ```
-project-folder/
-├── index.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
+tugas-besar-teo-dw/
+├── website/
+│   ├── style.css
+│   ├── script.js
 │   ├── images/
-│   └── fonts/
 ├── README.md
 ```
 
