@@ -19,22 +19,36 @@
 ## 🎯 Tugas dan Pembagian Kerja
 
 ### [Fais Bese Febrian]
-- [ ] 
+- [ ] Finalisasi dan Quality Check
+- [ ] Mengecek bug visual
+- [ ] Merapikan class Tailwind, memastikan semua halaman konsisten
+- [ ] Mengatur folder aset
+- [ ] Mengecek kerapihan code
 
 ### [Vina Aisya Hafiz]
-- [ ] 
+- [ ] Memperbagus tampilan Dashboard (Home)
+- [ ] Menambahkan background image, overlay, teks, dan tombol CTA (apa aja)
 
 ### [Ketut Sumantre]
-- [x] Pembuatan themeplate HTML
+- [x] Membuat struktur dasar HTML
+- [ ] Membuat interaksi JS (menu, cart, hamburger)
+- [ ] Menghubungkan semua halaman dan fitur utamaL
 
 ### [Farhan Ridwan Badawi]
-- [ ]
+- [ ] Memperbagus halaman Cart (Keranjang)
+- [ ] Menambah tombol hapus semua, styling list, total harga, animasi item
+- [ ] Menata layout agar user-friendly
 
 ### [Bunga Putri Nuriman]
-- [ ] 
+- [ ] Memperbagus tampilan Menu Kopi
+- [ ] Menambahkan beberapa menu kopi
+- [ ] Mendesain kartu menu (shadow, hover, animasi) sesuai contoh yg ada
+- [ ] Menata grid agar lebih rapih & modern
 
 ### [lilis]
-- [ ]
+- [ ] Memperbagus halaman About
+- [ ] Menambahkan teks deskriptif tentang coffee shop
+- [ ] Mendesain layout agar menarik dan mudah dibaca
 
 ## ✨ Fitur-Fitur
 
