@@ -7,3 +7,116 @@
     #hamburger.open span:nth-child(3) {
       transform: rotate(-45deg) translateY(-6px);
     }
+
+/* teks selamat datang */
+@keyframes cardHover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* hover kartu fitur */
+.feature-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Efek overlay gradient */
+.gradient-overlay {
+  background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(101,67,33,0.7) 100%);
+}
+
+/* Efek plus/minus */
+.quantity-btn {
+  transition: all 0.2s ease;
+}
+
+.quantity-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* scrolling */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Fix untuk layout  */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix testimonial */
+.testimonial-card {
+  max-width: 100%;
+}
+
+/* gambar responsif */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar */
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+/* Hamburger */
+#hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(6px);
+}
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+#hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+/* badge */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.floating-badge {
+  animation: float 3s ease-in-out infinite;
+}
