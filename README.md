@@ -46,9 +46,9 @@
 - [ ] Menata grid agar lebih rapih & modern
 
 ### [lilis]
-- [ ] Memperbagus halaman About
-- [ ] Menambahkan teks deskriptif tentang coffee shop
-- [ ] Mendesain layout agar menarik dan mudah dibaca
+- [✅] Memperbagus halaman About
+- [✅] Menambahkan teks deskriptif tentang coffee shop
+- [✅] Mendesain layout agar menarik dan mudah dibaca
 
 ## ✨ Fitur-Fitur
 
