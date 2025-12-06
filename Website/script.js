@@ -125,44 +125,75 @@ document.querySelectorAll("#nav-menu button").forEach(btn => {
 // MENU KOPI
 // ============================
 const menuList = [
-  { name: "Espresso", price: 25000, img: "images/foto_menu_kopi/menu_ekspresso.jpg" },
-  { name: "Cappuccino", price: 30000, img: "images/foto_menu_kopi/menu_capucino.jpg" },
-  { name: "Latte", price: 28000, img: "images/foto_menu_kopi/menu_kopilate.jpg" },
-  { name: "Mocha", price: 32000, img: "images/foto_menu_kopi/menu_kopimocha.jpg" },
-  { name: "Americano", price: 22000, img: "images/foto_menu_kopi/menu_americano.jpg" },
-  { name: "Macchiato", price: 29000, img: "images/foto_menu_kopi/menu_kopimacchiato.jpg" }
+  { name: "Americano", price: 25000, img: "images/foto_menu/hot/Americano.png", category:"hot" },
+  { name: "Cappuccino", price: 30000, img: "images/foto_menu/hot/Cappuccino.jpeg" , category:"hot"},
+  { name: "Espresso", price: 28000, img: "images/foto_menu/hot/Espresso.jpeg", category:"hot" },
+  { name: "Latte", price: 32000, img: "images/foto_menu/hot/Latte.jpeg" , category:"hot"},
+  { name: "Macchiato", price: 22000, img:"images/foto_menu/hot/Macchiato.jpeg", category:"hot" },
+  { name: "Mocha", price: 29000, img: "images/foto_menu/hot/Mocha.jpeg", category:"hot" },
+
+  { name: "Iced Ameri", price: 22000, img: "images/foto_menu/cold/Iced Americano.jpeg", category:"cold" },
+  { name: "Cold Brew", price: 28000, img: "images/foto_menu/cold/Cold Brew.jpeg", category:"cold"},
+  { name: "Cappu Ice", price: 30000, img: "images/foto_menu/cold/Iced Cappuccino.png", category:"cold" },
+  { name: "Iced Mocha", price: 32000, img: "images/foto_menu/cold/Iced Mocha.jpeg" , category:"cold"},
+  { name: "Black Coffee", price: 20000, img:"images/foto_menu/cold/Cold Black Coffee.jpeg", category:"cold" },
+
+  { name: "Caramel", price: 32000, img: "images/foto_menu/spesial/Caramel Macchiato.jpeg", category:"spesial" },
+  { name: "Affogato", price: 35000, img:"images/foto_menu/spesial/Affogato.jpeg", category:"spesial"},
+  { name: "Flavored", price: 33000, img:"images/foto_menu/spesial/Flavored Latte.jpeg", category:"spesial" },
+  { name: "Viet Drip", price: 36000, img:"images/foto_menu/spesial/Vietnam Drip.png", category:"spesial" },
+
 ];
 
 const menuContainer = document.getElementById("menu-items");
 const template = document.getElementById("menu-template");
-
-let cart = [];
 let qtyData = Array(menuList.length).fill(0);
 
-// Render menu dari template (JS tanpa styling)
-menuList.forEach((item, index) => {
-  const clone = template.content.cloneNode(true);
+function renderMenu(filterCategory = "all") {
+  menuContainer.innerHTML = "";
 
-  clone.querySelector(".menu-img").src = item.img;
-  clone.querySelector(".title").textContent = item.name;
-  clone.querySelector(".price").textContent = "Rp " + item.price.toLocaleString();
+  menuList.forEach((item, index) => {
+    if (filterCategory !== "all" && item.category !== filterCategory) return;
 
-  const qtySpan = clone.querySelector(".qty");
+    const clone = template.content.cloneNode(true);
 
-  clone.querySelector(".plus").addEventListener("click", () => {
-    qtyData[index]++;
-    qtySpan.textContent = qtyData[index];
-    updateCart();
+    clone.querySelector(".menu-img").src = item.img;
+    clone.querySelector(".title").textContent = item.name;
+    clone.querySelector(".price").textContent = "Rp " + item.price.toLocaleString();
+
+    const qtySpan = clone.querySelector(".qty");
+
+    clone.querySelector(".plus").addEventListener("click", () => {
+      qtyData[index]++;
+      qtySpan.textContent = qtyData[index];
+      updateCart?.();
+    });
+
+    clone.querySelector(".minus").addEventListener("click", () => {
+      if (qtyData[index] > 0) qtyData[index]--;
+      qtySpan.textContent = qtyData[index];
+      updateCart?.();
+    });
+
+    menuContainer.appendChild(clone);
   });
+}
 
-  clone.querySelector(".minus").addEventListener("click", () => {
-    if (qtyData[index] > 0) qtyData[index]--;
-    qtySpan.textContent = qtyData[index];
-    updateCart();
+document.querySelectorAll(".cat-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const cat = btn.getAttribute("data-category");
+
+    renderMenu(cat);
+
+    document.querySelectorAll(".cat-btn").forEach(b => {
+      b.classList.remove("bg-amber-700", "text-amber-100");
+      b.classList.add("text-amber-700"); 
+    });
+    btn.classList.add("bg-amber-700", "text-amber-100");
   });
-
-  menuContainer.appendChild(clone);
 });
+
+renderMenu();
 
 // ============================
 // CART
