@@ -40,15 +40,15 @@
 - [ ] Menata layout agar user-friendly
 
 ### [Bunga Putri Nuriman]
-- [ ] Memperbagus tampilan Menu Kopi
-- [ ] Menambahkan beberapa menu kopi
-- [ ] Mendesain kartu menu (shadow, hover, animasi) sesuai contoh yg ada
-- [ ] Menata grid agar lebih rapih & modern
+- [x] Memperbagus tampilan Menu Kopi
+- [x] Menambahkan beberapa menu kopi
+- [x] Mendesain kartu menu (shadow, hover, animasi) sesuai contoh yg ada
+- [x] Menata grid agar lebih rapih & modern
 
 ### [lilis]
-- [✅] Memperbagus halaman About
-- [✅] Menambahkan teks deskriptif tentang coffee shop
-- [✅] Mendesain layout agar menarik dan mudah dibaca
+- [x] Memperbagus halaman About
+- [x] Menambahkan teks deskriptif tentang coffee shop
+- [x] Mendesain layout agar menarik dan mudah dibaca
 
 ## ✨ Fitur-Fitur
 
