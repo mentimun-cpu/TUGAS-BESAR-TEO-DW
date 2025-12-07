@@ -215,29 +215,85 @@ function updateCart() {
   renderCart();
 }
 
-function renderCart() {
-  const cartList = document.getElementById("cart-list");
-  const cartCount = document.getElementById("cart-count");
-  const badgeDesktop = document.getElementById("cart-count-badge");
-  const badgeMobile = document.getElementById("cart-count-badge-mobile");
+function updateCart() {
+  cart = [];
 
-  cartList.innerHTML = "";
-
-  let totalQty = 0;
-
-  cart.forEach(item => {
-    totalQty += item.qty;
-
-    const li = document.createElement("li");
-    li.textContent = `${item.name} x${item.qty} - Rp ${item.subtotal.toLocaleString()}`;
-    cartList.appendChild(li);
+  menuList.forEach((item, i) => {
+    if (qtyData[i] > 0) {
+      cart.push({
+        index: i, // <-- HARUS ADA INI
+        name: item.name,
+        price: item.price,
+        qty: qtyData[i],
+        subtotal: qtyData[i] * item.price,
+        img: item.img
+      });
+    }
   });
 
-  cartCount.textContent = totalQty;
-  badgeDesktop.textContent = totalQty;
-  badgeMobile.textContent = totalQty;
+  renderCart();
 }
 
+function renderCart() {
+const cartList = document.getElementById("cart-list");
+ const cartCount = document.getElementById("cart-count");
+ const badgeDesktop = document.getElementById("cart-count-badge");
+ const badgeMobile = document.getElementById("cart-count-badge-mobile");
+ // Pastikan elemen ini ada di HTML Anda di bagian Total Belanja
+ const cartTotalElement = document.getElementById("cart-total"); 
+
+ cartList.innerHTML = "";
+
+ let totalQty = 0;
+ let totalPrice = 0; // <-- 1. Tambahkan variabel Total Harga
+
+ if (cart.length === 0) {
+ // Tampilan keranjang kosong untuk tema terang
+cartList.innerHTML = `
+ <li class="text-center text-gray-500 py-8 italic text-lg">
+  Keranjang Anda kosong. Ayo jelajahi menu kami!
+ </li>
+  `;
+ } else {
+
+  cart.forEach(item => {
+ totalQty += item.qty;
+ totalPrice += item.subtotal; // <-- 2. Hitung Total Harga
+
+ const li = document.createElement("li");
+ // Tambahkan kelas untuk animasi item masuk
+li.classList.add("cart-item-animate"); 
+
+ // 3. Ganti styling ke tema terang (White/Yellow)
+ li.innerHTML = `
+ <div class="flex items-center justify-between gap-4 p-4 rounded-xl transition duration-300 border border-gray-200 bg-white hover:shadow-md">
+ <div class="flex items-center gap-4 flex-1 min-w-0">
+  <img src="${item.img}" class="w-20 h-20 rounded-lg object-cover shadow-lg border-2 border-yellow-600" alt="${item.name}">
+  <div class="flex flex-col text-left truncate">
+  <span class="text-gray-900 font-bold text-xl truncate">${item.name}</span>
+  <span class="text-gray-600 text-sm">Jumlah: x${item.qty}</span>
+  </div>
+ </div>
+ 
+ <div class="text-right">
+  <span class="text-xl font-extrabold text-gray-900">Rp ${item.subtotal.toLocaleString()}</span>
+ </div>
+ </div>
+ `;
+ cartList.appendChild(li);
+});
+    
+}
+
+cartCount.textContent = totalQty;
+badgeDesktop.textContent = totalQty;
+badgeMobile.textContent = totalQty;
+
+// <-- 4. Tampilkan Total Harga
+if (cartTotalElement) {
+cartTotalElement.textContent = `Rp ${totalPrice.toLocaleString()}`; 
+}
+}
 function checkout() {
   if (cart.length === 0) {
     alert("Keranjang kosong!");
