@@ -1,27 +1,65 @@
-#hamburger.open span:nth-child(1) {
-      transform: rotate(45deg) translateY(6px);
-    }
-    #hamburger.open span:nth-child(2) {
-      opacity: 0;
-    }
-    #hamburger.open span:nth-child(3) {
-      transform: rotate(-45deg) translateY(-6px);
-    }
+/* ============================
+   NAVBAR FIXED POSITION
+   ============================ */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
 
-/* teks selamat datang */
-@keyframes cardHover {
-  0% {
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
     transform: translateY(0);
+    opacity: 1;
   }
-  100% {
-    transform: translateY(-10px);
-  }
+}
+
+.content-with-navbar {
+  padding-top: 80px;
+}
+
+/* ============================
+   HAMBURGER MENU ANIMATION
+   ============================ */
+.hamburger-btn.open .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger-btn.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-btn.open .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.hamburger-line {
+  transition: all 0.3s ease;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #f3f4f6;
+  animation: fadeIn 0.3s ease-out;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -29,40 +67,132 @@
   }
 }
 
-@keyframes scaleIn {
-  from {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* hover kartu fitur */
-.feature-card:hover {
-  transform: translateY(-10px);
-  transition: transform 0.3s ease;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* Efek overlay gradient */
-.gradient-overlay {
-  background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(101,67,33,0.7) 100%);
-}
-
-/* Efek plus/minus */
-.quantity-btn {
+/* ============================
+   NAVIGATION BUTTONS
+   ============================ */
+.nav-btn, .mobile-nav-btn {
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.quantity-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.nav-btn:hover, .mobile-nav-btn:hover {
+  transform: translateY(-2px);
 }
 
-/* scrolling */
+.cart-btn {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cart-btn:hover {
+  background-color: #fef3c7;
+  transform: scale(1.1);
+}
+
+/* ============================
+   GRADIENT OVERLAY & ANIMATIONS
+   ============================ */
+.gradient-overlay {
+  background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(101,67,33,0.8) 50%, rgba(0,0,0,0.7) 100%);
+}
+
+@keyframes cardHover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes badgePulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 rgba(245,158,11,0.7); }
+  50% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(245,158,11,0); }
+}
+
+/* ============================
+   COMPONENT STYLES
+   ============================ */
+.feature-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+}
+.feature-card:hover {
+  animation: cardHover 0.3s forwards;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.testimonial-card {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
+}
+
+.quantity-btn {
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.quantity-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================
+   SLIDE TRANSITIONS
+   ============================ */
+.slide {
+  animation: fadeInUp 0.5s ease-out;
+  min-height: calc(100vh - 80px);
+}
+
+/* ============================
+   CART BADGE ANIMATION
+   ============================ */
+#cart-count-badge,
+#cart-count-badge-mobile {
+  animation: badgePulse 2s infinite;
+}
+
+/* ============================
+   BUTTON EFFECTS
+   ============================ */
+.category-btn.active {
+  box-shadow: 0 4px 6px -1px rgba(146, 64, 14, 0.3), 0 2px 4px -1px rgba(146, 64, 14, 0.2);
+}
+
+.category-btn {
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.add-to-cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+}
+.add-to-cart-btn:active {
+  transform: translateY(0);
+}
+
+/* ============================
+   RESPONSIVE & UTILITY
+   ============================ */
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -70,53 +200,163 @@ html {
 
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-/* Fix untuk layout  */
 .container {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-/* Fix testimonial */
-.testimonial-card {
-  max-width: 100%;
-}
-
-/* gambar responsif */
 .responsive-img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-/* Hide scrollbar */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+/* ============================
+   SCROLLBAR STYLING
+   ============================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f59e0b, #d97706);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #d97706, #b45309);
 }
 
-/* Hide scrollbar */
-.no-scrollbar {
-  -ms-overflow-style: none; 
-  scrollbar-width: none;  
+/* ============================
+   ANIMATION DELAYS
+   ============================ */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+
+/* ============================
+   MENU CARD HOVER EFFECTS
+   ============================ */
+.card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.card:hover {
+  animation: cardHover 0.3s forwards;
+  box-shadow: 0 25px 50px -12px rgba(146, 64, 14, 0.25);
 }
 
-/* Hamburger */
-#hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translateY(6px);
-}
-#hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-#hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-6px);
-}
-
-/* badge */
+/* ============================
+   FLOATING ANIMATION
+   ============================ */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  50% { transform: translateY(-10px); }
 }
 
 .floating-badge {
   animation: float 3s ease-in-out infinite;
+}
+
+/* ============================
+   IMAGE EFFECTS
+   ============================ */
+.group:hover .menu-img {
+  transform: scale(1.1);
+}
+
+/* ============================
+   UTILITY CLASSES
+   ============================ */
+.hidden {
+  display: none !important;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+/* ============================
+   ABOUT ITEM ANIMATIONS
+   ============================ */
+.about-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* ============================
+   EMPTY CART STYLING
+   ============================ */
+#empty-cart {
+  transition: all 0.3s ease;
+}
+
+/* ============================
+   NEWSLETTER INPUT ERROR
+   ============================ */
+.ring-red-500 {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* ============================
+   SMOOTH TRANSITIONS
+   ============================ */
+.slide {
+  transition: opacity 0.5s ease;
+}
+
+/* ============================
+   MOBILE OPTIMIZATIONS
+   ============================ */
+@media (max-width: 768px) {
+  .navbar-fixed {
+    padding: 8px 0;
+  }
+  
+  .content-with-navbar {
+    padding-top: 70px;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card {
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ============================
+   PRINT STYLES
+   ============================ */
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }
