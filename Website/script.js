@@ -7,14 +7,25 @@ console.log("CoffeeBean Script Loading...");
 // GLOBAL VARIABLES
 // ============================
 const menuList = [
-  { name: "Espresso", price: 25000, img: "images/foto_menu/Ekspresso.jpg", category: "hot" },
-  { name: "Cappuccino", price: 30000, img: "images/foto_menu/Capucino.jpg", category: "hot" },
-  { name: "Latte", price: 28000, img: "images/foto_ menu/'Iced Latte'.jpg", category: "cold" },
-  { name: "Mocha", price: 32000, img: "images/foto_menu/Mocha.jpg", category: "special" },
-  { name: "Americano", price: 22000, img: "images/foto_menu/Americano.jpg", category: "hot" },
-  { name: "Macchiato", price: 29000, img: "images/foto_menu/Macchiato.jpg", category: "special" }
-];
+  { name: "Americano", price: 25000, img: "images/foto_menu/hot/Americano.png", category:"hot" },
+  { name: "Cappuccino", price: 30000, img: "images/foto_menu/hot/Cappuccino.jpeg" , category:"hot"},
+  { name: "Espresso", price: 28000, img: "images/foto_menu/hot/Espresso.jpeg", category:"hot" },
+  { name: "Latte", price: 32000, img: "images/foto_menu/hot/Latte.jpeg" , category:"hot"},
+  { name: "Macchiato", price: 22000, img:"images/foto_menu/hot/Macchiato.jpeg", category:"hot" },
+  { name: "Mocha", price: 29000, img: "images/foto_menu/hot/Mocha.jpeg", category:"hot" },
 
+  { name: "Iced Ameri", price: 22000, img: "images/foto_menu/cold/Iced Americano.jpeg", category:"cold" },
+  { name: "Cold Brew", price: 28000, img: "images/foto_menu/cold/Cold Brew.jpeg", category:"cold"},
+  { name: "Cappu Ice", price: 30000, img: "images/foto_menu/cold/Iced Cappuccino.png", category:"cold" },
+  { name: "Iced Mocha", price: 32000, img: "images/foto_menu/cold/Iced Mocha.jpeg" , category:"cold"},
+  { name: "Black Coffee", price: 20000, img:"images/foto_menu/cold/Cold Black Coffee.jpeg", category:"cold" },
+
+  { name: "Caramel", price: 32000, img: "images/foto_menu/spesial/Caramel Macchiato.jpeg", category:"spesial" },
+  { name: "Affogato", price: 35000, img:"images/foto_menu/spesial/Affogato.jpeg", category:"spesial"},
+  { name: "Flavored", price: 33000, img:"images/foto_menu/spesial/Flavored Latte.jpeg", category:"spesial" },
+  { name: "Viet Drip", price: 36000, img:"images/foto_menu/spesial/Vietnam Drip.png", category:"spesial" },
+
+];
 let cart = [];
 let qtyData = Array(menuList.length).fill(0);
 
