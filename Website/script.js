@@ -34,65 +34,30 @@ let qtyData = Array(menuList.length).fill(0);
 // ============================
 function debugNavbar() {
   console.log("=== NAVBAR DEBUG INFO ===");
-  
+
   const nav = document.querySelector('nav');
-  console.log("Nav element found:", !!nav);
-  
   if (nav) {
-    console.log("Nav display:", window.getComputedStyle(nav).display);
-    console.log("Nav visibility:", window.getComputedStyle(nav).visibility);
-    console.log("Nav position:", window.getComputedStyle(nav).position);
-    console.log("Nav z-index:", window.getComputedStyle(nav).zIndex);
-    console.log("Nav classList:", nav.classList);
-  }
-  
-  const desktopMenu = document.querySelector('.hidden.md\\:flex') || document.querySelector('[class*="md:flex"]');
-  console.log("Desktop menu found:", !!desktopMenu);
-  
-  if (desktopMenu) {
-    console.log("Desktop menu classes:", desktopMenu.classList);
-    console.log("Desktop menu display:", window.getComputedStyle(desktopMenu).display);
+    const style = window.getComputedStyle(nav);
+    console.log("Nav display:", style.display);
+    console.log("Nav visibility:", style.visibility);
+    console.log("Nav z-index:", style.zIndex);
   }
 }
+
 
 // ============================
 // FORCE NAVBAR VISIBILITY
 // ============================
 function forceNavbarVisibility() {
-  console.log("Forcing navbar visibility...");
-  
   const nav = document.querySelector('nav');
-  if (nav) {
-    // Remove any hiding classes
-    nav.classList.remove('hidden');
-    
-    // Force visibility styles
-    nav.style.display = 'block';
-    nav.style.visibility = 'visible';
-    nav.style.opacity = '1';
-    nav.style.position = 'fixed';
-    nav.style.top = '0';
-    nav.style.left = '0';
-    nav.style.right = '0';
-    nav.style.zIndex = '1000';
-    nav.style.backgroundColor = 'white';
-    nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-    nav.style.width = '100%';
-    
-    console.log("Navbar visibility forced successfully");
-  } else {
-    console.error("Navbar element not found!");
-  }
-  
-  // Force desktop menu visibility
-  const desktopMenu = document.querySelector('.hidden.md\\:flex') || document.querySelector('[class*="md:flex"]');
-  if (desktopMenu) {
-    desktopMenu.classList.remove('hidden');
-    desktopMenu.style.display = 'flex';
-    desktopMenu.style.visibility = 'visible';
-    console.log("Desktop menu visibility forced");
-  }
+  if (!nav) return;
+
+  nav.classList.remove('hidden');
+  nav.style.opacity = '1';
 }
+
+
+  
 
 // ============================
 // HAMBURGER MENU FUNCTIONALITY
