@@ -1,8 +1,8 @@
 # 📋 Informasi Projek
 
-**Nama Projek:** [Nama Website Anda]  
-**Tema:** [Tema yang dipilih, contoh: E-commerce, Portfolio, Blog, dll]  
-**Kelas:** [Prak Design Web se kelompok 4]  
+**Nama Projek:** [CoffeBean]  
+**Tema:** [E-commerce,]  
+**Kelas:** [Design Web-A]  
 **Tanggal Mulai:** [25/11/2025]  
 
 ## 👥 Anggota Kelompok
@@ -56,12 +56,8 @@
 - ✅ **Modern UI/UX** - Interface yang user-friendly dan menarik
 - ✅ **Navigation System** - Menu navigasi yang intuitif
 - ✅ **Contact Form** - Form kontak dengan validasi
-
-### 🔧 Fitur Tambahan
-- 🌙 **Dark/Light Mode** - Toggle tema gelap dan terang
-- 🔍 **Search Functionality** - Fitur pencarian konten
-- 📱 **Mobile Optimization** - Optimasi khusus mobile device
-- 🚀 **Fast Loading** - Optimasi performa dan kecepatan
+- ✅ **Mobile Optimization** - Optimasi khusus mobile device
+- ✅ **Fast Loading** - Optimasi performa dan kecepatan
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -115,16 +111,11 @@ tugas-besar-teo-dw/
 - [x] Planning & Research
 - [x] Wireframing
 - [x] HTML Structure
-- [ ] CSS Styling
-- [ ] JavaScript Functionality
-- [ ] Testing
-- [ ] Deployment
-
-### Challenges
-- [Challenge yang dihadapi 1]
-- [Challenge yang dihadapi 2]
-- [Challenge yang dihadapi 3]
+- [x] CSS Styling
+- [x] JavaScript Functionality
+- [x] Testing
+- [x] Deployment
 
 ---
 
-**© 2025 [Nama Kelompok]. All rights reserved.**
+**© 2025 [Kelompok 10]. All rights reserved.**
