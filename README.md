@@ -18,34 +18,33 @@
 
 ## 🎯 Tugas dan Pembagian Kerja
 
-### [Fais Bese Febrian]
-- [ ] Finalisasi dan Quality Check
-- [ ] Mengecek bug visual
-- [ ] Merapikan class Tailwind, memastikan semua halaman konsisten
-- [ ] Mengatur folder aset
-- [ ] Mengecek kerapihan code
+### [Fais Bese Febrian] (branh main)
+- [x] Finalisasi dan Quality Check
+- [x] Mengecek bug visual
+- [x] Merapikan class Tailwind, memastikan semua halaman konsisten
+- [x] Mengatur folder aset
 
-### [Vina Aisya Hafiz]
-- [ ] Memperbagus tampilan Dashboard (Home)
-- [ ] Menambahkan background image, overlay, teks, dan tombol CTA (apa aja)
+### [Vina Aisya Hafiz] (branh fitur dashboard)
+- [x] Memperbagus tampilan Dashboard (Home)
+- [x] Menambahkan background image, overlay, teks, dan tombol CTA (apa aja)
 
-### [Ketut Sumantre]
+### [Ketut Sumantre] (branh main)
 - [x] Membuat struktur dasar HTML
-- [ ] Membuat interaksi JS (menu, cart, hamburger)
-- [ ] Menghubungkan semua halaman dan fitur utamaL
+- [x] Membuat interaksi JS (menu, cart, hamburger)
+- [x] Menghubungkan semua halaman dan fitur utamaL
 
-### [Farhan Ridwan Badawi]
-- [ ] Memperbagus halaman Cart (Keranjang)
-- [ ] Menambah tombol hapus semua, styling list, total harga, animasi item
-- [ ] Menata layout agar user-friendly
+### [Farhan Ridwan Badawi] (branh fitur keranjang/pesanan)
+- [x] Memperbagus halaman Cart (Keranjang)
+- [x] Menambah tombol hapus semua, styling list, total harga, animasi item
+- [x] Menata layout agar user-friendly
 
-### [Bunga Putri Nuriman]
+### [Bunga Putri Nuriman] (branh fitur menu)
 - [x] Memperbagus tampilan Menu Kopi
 - [x] Menambahkan beberapa menu kopi
 - [x] Mendesain kartu menu (shadow, hover, animasi) sesuai contoh yg ada
 - [x] Menata grid agar lebih rapih & modern
 
-### [lilis]
+### [lilis] (branh fitur about)
 - [x] Memperbagus halaman About
 - [x] Menambahkan teks deskriptif tentang coffee shop
 - [x] Mendesain layout agar menarik dan mudah dibaca
