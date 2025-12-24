@@ -109,50 +109,196 @@
     </div>
   </nav>
 
-<section id="home" class="slide content-with-navbar min-h-screen flex items-center justify-center bg-gradient-to-b from-amber-50 to-white">
-  <div class="text-center px-6">
-    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-      Selamat Datang di <span class="text-amber-600">CoffeeBean</span>
-    </h1>
-    <p class="text-gray-600 max-w-xl mx-auto mb-6">
-      Nikmati kopi premium dengan cita rasa terbaik setiap hari.
-    </p>
-    <button onclick="showSlide('menu')"
-            class="bg-amber-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-amber-700 transition">
-      Lihat Menu
-    </button>
-  </div>
-</section>
-
-<!-- Menu section -->
-  <section id="menu" class="slide content-with-navbar bg-gradient-to-b from-amber-50 to-white py-12 md:py-16 lg:py-20 hidden min-h-screen">
-    <div class="container mx-auto px-4 md:px-6 max-w-7xl">
-      <!-- Header Menu -->
-      <div class="text-center mb-8 md:mb-10 lg:mb-12 animate-fade-in-up px-4">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 md:mb-3">Menu <span class="text-amber-700">Kopi Kami</span></h2>
-        <p class="text-gray-600 text-sm md:text-base max-w-2xl mx-auto">Temukan cita rasa kopi sempurna yang diseduh khusus untuk Anda dari biji kopi pilihan terbaik</p>
+<!-- Dashboard/Home Section -->
+  <section id="home" class="slide content-with-navbar min-h-screen bg-cover bg-center bg-fixed relative overflow-hidden"
+           style="background-image: url('images/foto_lainnya/kopibg.jpg');">
+    
+    <!-- Overlay gradient -->
+    <div class="absolute inset-0 gradient-overlay"></div>
+    
+    <!-- Konten utama dashboard -->
+    <div class="container mx-auto px-4 md:px-6 py-12 md:py-20 relative z-10 max-w-7xl">
+      <!-- Header -->
+      <div class="text-center mb-12 md:mb-16 animate-fade-in-up px-4">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white leading-tight">
+          Nikmati <span class="text-amber-400">Kopi Terbaik</span> <br class="hidden md:block">Setiap Hari
+        </h1>
+        <p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 max-w-2xl md:max-w-3xl mx-auto">
+          Dari biji kopi pilihan langsung ke cangkir Anda. Rasakan cita rasa autentik yang memikat di setiap tegukan.
+        </p>
+        
+        <!-- Tombol CTA -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 mt-8 md:mt-10 px-4">
+          <button onclick="showSlide('menu')"
+                  class="bg-gradient-to-r from-amber-600 to-amber-500 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-base md:text-lg shadow-2xl hover:from-amber-500 hover:to-amber-400">
+            <i class="fas fa-coffee"></i>
+            Lihat Menu Kopi
+          </button>
+          
+        </div>
       </div>
       
-      <!-- fungsi filter -->
-      <div class="flex flex-wrap justify-center gap-2 mb-6 md:mb-8 lg:mb-10 px-4">
-        <button class="category-btn active px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-amber-700 text-white font-medium shadow-lg text-sm md:text-base hover:shadow-xl transition-all duration-300" data-category="all">
-          <i class="fas fa-mug-hot mr-2"></i>Semua Menu
-        </button>
-        <button class="category-btn px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-white text-amber-700 font-medium shadow hover:bg-amber-50 text-sm md:text-base hover:shadow-xl transition-all duration-300" data-category="hot">
-          <i class="fas fa-fire mr-2"></i>Kopi Panas
-        </button>
-        <button class="category-btn px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-white text-amber-700 font-medium shadow hover:bg-amber-50 text-sm md:text-base hover:shadow-xl transition-all duration-300" data-category="cold">
-          <i class="fas fa-snowflake mr-2"></i>Kopi Dingin
-        </button>
-        <button class="category-btn px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-white text-amber-700 font-medium shadow hover:bg-amber-50 text-sm md:text-base hover:shadow-xl transition-all duration-300" data-category="spesial">
-          <i class="fas fa-star mr-2"></i>Spesial
-        </button>
+      <!-- fitur -->
+      <div class="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 px-4">
+        <div class="bg-white/10 backdrop-blur-sm p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl text-center feature-card border border-white/20">
+          <div class="bg-amber-100 text-amber-800 w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 lg:mb-6">
+            <i class="fas fa-seedling text-lg md:text-xl lg:text-2xl"></i>
+          </div>
+          <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">Biji Kopi Pilihan</h3>
+          <p class="text-gray-200 text-sm md:text-base">Kami menggunakan biji kopi terbaik dari perkebunan lokal dan internasional untuk rasa yang tak terlupakan.</p>
+        </div>
+        
+        <div class="bg-white/10 backdrop-blur-sm p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl text-center feature-card border border-white/20">
+          <div class="bg-amber-100 text-amber-800 w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 lg:mb-6">
+            <i class="fas fa-award text-lg md:text-xl lg:text-2xl"></i>
+          </div>
+          <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">Barista Berpengalaman</h3>
+          <p class="text-gray-200 text-sm md:text-base">Dibuat oleh barista profesional dengan pengalaman bertahun-tahun untuk kualitas terbaik setiap cangkir.</p>
+        </div>
+        
+        <div class="bg-white/10 backdrop-blur-sm p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl text-center feature-card border border-white/20">
+          <div class="bg-amber-100 text-amber-800 w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 lg:mb-6">
+            <i class="fas fa-shipping-fast text-lg md:text-xl lg:text-2xl"></i>
+          </div>
+          <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">Pengiriman Cepat</h3>
+          <p class="text-gray-200 text-sm md:text-base">Pesanan Anda akan sampai dengan cepat dan kopi tetap hangat dengan kemasan khusus kami.</p>
+        </div>
       </div>
       
-      <div id="menu-items" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-6 lg:gap-8 px-4 menu-grid">
+      <!-- Statistik -->
+      <div class="mt-12 md:mt-20 bg-white/10 backdrop-blur-sm p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl mx-4">
+        <div class="text-center mb-6 md:mb-8 lg:mb-10">
+          <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2">CoffeeBean dalam Angka</h2>
+          <p class="text-gray-200 text-sm md:text-base">Bukti kualitas yang dipercaya oleh pelanggan kami</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div class="text-center">
+            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-1">500+</div>
+            <div class="text-gray-200 font-medium text-xs md:text-sm">Pelanggan Setia</div>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-1">16+</div>
+            <div class="text-gray-200 font-medium text-xs md:text-sm">Jenis Kopi</div>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-1">10K+</div>
+            <div class="text-gray-200 font-medium text-xs md:text-sm">Cangkir Terjual</div>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-1">5</div>
+            <div class="text-gray-200 font-medium text-xs md:text-sm">Tahun Pengalaman</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bagian newsletter -->
+      <div class="mt-12 md:mt-20 bg-gradient-to-br from-amber-800 to-amber-600 p-5 md:p-6 lg:p-8 text-center max-w-4xl mx-auto rounded-xl md:rounded-2xl animate-slide-in-left mx-4">
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-3">Tetap Terhubung dengan CoffeeBean</h2>
+        <p class="text-amber-100 mb-4 md:mb-6 text-sm md:text-base">Dapatkan info promo, menu baru, dan tips menikmati kopi langsung ke email Anda.</p>
+        
+        <div class="flex flex-col md:flex-row gap-3 max-w-lg mx-auto">
+          <input type="email" placeholder="Masukkan email Anda" 
+                 class="flex-grow px-4 py-3 md:px-6 md:py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-400 text-gray-800 text-sm md:text-base">
+          <button class="bg-white text-amber-900 px-6 py-3 rounded-full font-bold hover:bg-amber-100 transition duration-300 text-sm md:text-base whitespace-nowrap mt-2 md:mt-0 newsletter-btn">
+            Berlangganan
+          </button>
+        </div>
+      </div>
+      
+      <!-- bagian testimoni -->
+      <div class="mt-12 md:mt-20 bg-gradient-to-br from-amber-50 to-amber-100 p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl animate-slide-in-left mx-4">
+        <div class="text-center mb-6 md:mb-8 lg:mb-10">
+          <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-amber-900 mb-2">Apa Kata Pelanggan Kami</h2>
+          <p class="text-amber-700 text-sm md:text-base">Ulasan jujur dari pecinta kopi sejati</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+          <!-- testimoni -->
+          <div class="bg-gradient-to-br from-white to-amber-50 rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 testimonial-card">
+            <div class="bg-gradient-to-r from-amber-800 to-amber-600 p-4 md:p-5 lg:p-6 flex items-center">
+              <div class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-amber-700 rounded-full flex items-center justify-center text-white font-bold mr-3 md:mr-4">
+                RW
+              </div>
+              <div class="text-left">
+                <h3 class="text-base md:text-lg lg:text-xl font-bold text-white">CoffeeBean</h3>
+                <h4 class="text-sm md:text-base lg:text-lg font-semibold text-amber-100">Rina Wijaya</h4>
+              </div>
+            </div>
+            <div class="p-4 md:p-5 lg:p-6 relative">
+              <div class="text-amber-400 text-base md:text-lg lg:text-xl mb-2 md:mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed italic mb-2 md:mb-3 relative z-10">
+                "Kopi di CoffeeBean selalu segar dan nikmat. Aroma dan rasanya konsisten setiap kali saya berkunjung. Tempat favorit saya untuk bekerja sambil menikmati secangkir latte."
+              </p>
+              <div class="border-t pt-2 md:pt-3 mt-2 md:mt-3 border-amber-100">
+                <p class="text-amber-600 text-xs md:text-sm">
+                  <i class="fas fa-coffee mr-1 md:mr-2"></i>Pelanggan setia sejak 2021
+                </p>
+              </div>
+              <div class="absolute top-0 left-0 text-4xl md:text-5xl lg:text-6xl text-amber-200 opacity-20 font-serif">"</div>
+            </div>
+          </div>
+          
+          <!-- testimoni -->
+          <div class="bg-gradient-to-br from-white to-amber-50 rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 testimonial-card">
+            <div class="bg-gradient-to-r from-amber-800 to-amber-600 p-4 md:p-5 lg:p-6 flex items-center">
+              <div class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-amber-700 rounded-full flex items-center justify-center text-white font-bold mr-3 md:mr-4">
+                BS
+              </div>
+              <div class="text-left">
+                <h3 class="text-base md:text-lg lg:text-xl font-bold text-white">CoffeeBean</h3>
+                <h4 class="text-sm md:text-base lg:text-lg font-semibold text-amber-100">Budi Santoso</h4>
+              </div>
+            </div>
+            <div class="p-4 md:p-5 lg:p-6 relative">
+              <div class="text-amber-400 text-base md:text-lg lg:text-xl mb-2 md:mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed italic mb-2 md:mb-3 relative z-10">
+                "Sebagai penikmat kopi, saya sangat menghargai kualitas biji kopi yang digunakan. Espresso mereka memiliki crema yang sempurna dan rasa yang mendalam. Highly recommended!"
+              </p>
+              <div class="border-t pt-2 md:pt-3 mt-2 md:mt-3 border-amber-100">
+                <p class="text-amber-600 text-xs md:text-sm">
+                  <i class="fas fa-mug-hot mr-1 md:mr-2"></i>Barista dan pecinta kopi
+                </p>
+              </div>
+              <div class="absolute top-0 left-0 text-4xl md:text-5xl lg:text-6xl text-amber-200 opacity-20 font-serif">"</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-4 md:mt-6 text-center">
+          <button onclick="showSlide('about')" class="inline-flex items-center text-amber-700 font-semibold hover:text-amber-900 transition-colors duration-300 text-sm md:text-base bg-amber-100 px-4 py-2 rounded-lg hover:bg-amber-200 shadow hover:shadow-lg">
+            Lihat lebih banyak testimonial
+            <i class="fas fa-arrow-right ml-2"></i>
+          </button>
+        </div>
       </div>
     </div>
   </section>
+<section id="menu" class="slide content-with-navbar hidden min-h-screen flex items-center justify-center bg-white">
+  <div class="text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Menu Kopi</h2>
+    <p class="text-gray-600 mb-6">Daftar menu akan ditampilkan di sini.</p>
+    <button onclick="showSlide('order')"
+            class="bg-amber-600 text-white px-6 py-3 rounded-full hover:bg-amber-700 transition">
+      Lihat Keranjang
+    </button>
+  </div>
+</section>
 
   <!-- Template Menu Item (TANPA ADD TO CART BUTTON) -->
 <template id="menu-template">
