@@ -18,33 +18,33 @@
 
 ## 🎯 Tugas dan Pembagian Kerja
 
-### [Fais Bese Febrian] (branh main)
+### [Fais Bese Febrian] (branch main)
 - [x] Finalisasi dan Quality Check
 - [x] Mengecek bug visual
 - [x] Merapikan class Tailwind, memastikan semua halaman konsisten
 - [x] Mengatur folder aset
 
-### [Vina Aisya Hafiz] (branh fitur dashboard)
+### [Vina Aisya Hafiz] (branch fitur dashboard)
 - [x] Memperbagus tampilan Dashboard (Home)
 - [x] Menambahkan background image, overlay, teks, dan tombol CTA (apa aja)
 
-### [Ketut Sumantre] (branh main)
+### [Ketut Sumantre] (branch main)
 - [x] Membuat struktur dasar HTML
 - [x] Membuat interaksi JS (menu, cart, hamburger)
 - [x] Menghubungkan semua halaman dan fitur utamaL
 
-### [Farhan Ridwan Badawi] (branh fitur keranjang/pesanan)
-- [x] Memperbagus halaman Cart (Keranjang)
+### [Farhan Ridwan Badawi] (branch fitur keranjang/pesanan)
+- [x] Memperbagus halaman Cart 
 - [x] Menambah tombol hapus semua, styling list, total harga, animasi item
 - [x] Menata layout agar user-friendly
 
-### [Bunga Putri Nuriman] (branh fitur menu)
+### [Bunga Putri Nuriman] (branch fitur menu)
 - [x] Memperbagus tampilan Menu Kopi
 - [x] Menambahkan beberapa menu kopi
-- [x] Mendesain kartu menu (shadow, hover, animasi) sesuai contoh yg ada
+- [x] Mendesain kartu menu
 - [x] Menata grid agar lebih rapih & modern
 
-### [lilis] (branh fitur about)
+### [lilis] (branch fitur about)
 - [x] Memperbagus halaman About
 - [x] Menambahkan teks deskriptif tentang coffee shop
 - [x] Mendesain layout agar menarik dan mudah dibaca
