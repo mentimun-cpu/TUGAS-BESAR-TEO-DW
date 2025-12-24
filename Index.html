@@ -135,15 +135,160 @@
   </div>
 </section>
 
-<section id="about" class="slide content-with-navbar hidden min-h-screen flex items-center justify-center bg-gray-50">
-  <div class="text-center max-w-2xl px-6">
-    <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
-    <p class="text-gray-600">
-      CoffeeBean adalah coffee shop yang menyajikan kopi pilihan dari biji terbaik
-      dengan proses seduh berkualitas untuk pengalaman terbaik pelanggan.
-    </p>
-  </div>
-</section>
+<!-- About Section -->
+  <section id="about" class="slide content-with-navbar bg-gradient-to-b from-amber-50 to-white py-12 md:py-16 lg:py-20 hidden min-h-screen">
+    <div class="container mx-auto px-4 md:px-6 max-w-7xl">
+      <!-- Header About -->
+      <div class="text-center mb-12 md:mb-16 animate-fade-in-up px-4">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
+          Tentang <span class="text-amber-700">CoffeeBean</span>
+        </h1>
+        <p class="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
+          Cerita di balik setiap cangkir kopi berkualitas yang kami sajikan
+        </p>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="relative w-full h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden mb-12 md:mb-16 shadow-xl mx-4">
+        <img src="images/foto_lainnya/ABOUT%201.png" 
+             class="w-full h-full object-cover"
+             alt="CoffeeBean Interior">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Tempat di Mana Kopi Bercerita</h2>
+          <p class="text-lg md:text-xl">Setiap biji memiliki kisahnya sendiri</p>
+        </div>
+      </div>
+
+      <!-- Konten About -->
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center mb-12 md:mb-16 px-4">
+        <div class="order-2 md:order-1">
+          <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 lg:p-10">
+            <span class="inline-block text-amber-600 font-semibold text-sm uppercase tracking-widest mb-3">Tentang Kami</span>
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Cerita di Balik Setiap Tegukan</h3>
+            
+            <div class="space-y-4 text-gray-600 leading-relaxed">
+              <p>
+                CoffeeBean hadir dengan misi sederhana: menyajikan kopi berkualitas yang bisa dinikmati siapa saja, kapan saja. 
+                Kami menggunakan biji kopi pilihan yang di-roast dengan penuh ketelitian sehingga setiap cangkir menghadirkan aroma yang kuat, rasa yang seimbang, dan karakter kopi yang benar-benar hidup.
+              </p>
+              
+              <p>
+                Di CoffeeBean, setiap seduhan dibuat secara fresh menggunakan teknik brewing yang presisi. 
+                Kami percaya bahwa kopi terbaik bukan hanya soal rasa tetapi tentang konsistensi, detail, dan pengalaman yang membuat setiap pelanggan ingin kembali lagi.
+              </p>
+              
+              <p>
+                CoffeeBean bukan hanya tempat menikmati kopi, tetapi ruang yang nyaman untuk bekerja, bersantai, atau bertemu teman. 
+                Dengan suasana hangat dan pelayanan yang ramah, kami ingin menjadi bagian dari rutinitasmu menemani setiap pagi, perjalanan, dan momen kecil yang berarti.
+              </p>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-amber-100">
+              <div class="flex flex-wrap gap-4">
+                <span class="bg-amber-50 text-amber-700 px-4 py-2 rounded-lg font-medium">
+                  <i class="fas fa-leaf mr-2"></i>Biji Kopi Pilihan
+                </span>
+                <span class="bg-amber-50 text-amber-700 px-4 py-2 rounded-lg font-medium">
+                  <i class="fas fa-clock mr-2"></i>Fresh Every Day
+                </span>
+                <span class="bg-amber-50 text-amber-700 px-4 py-2 rounded-lg font-medium">
+                  <i class="fas fa-heart mr-2"></i>Dibuat dengan Cinta
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order-1 md:order-2">
+          <div class="relative">
+            <img src="images/foto_lainnya/ABOUT%202.jpg" 
+                 class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                 alt="Coffee Process">
+            <div class="absolute -bottom-4 -right-4 bg-amber-500 text-white p-4 md:p-6 rounded-xl shadow-xl">
+              <div class="text-center">
+                <div class="text-2xl md:text-3xl font-bold">5+</div>
+                <div class="text-sm md:text-base">Tahun Pengalaman</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nilai-Nilai -->
+      <div class="mb-12 md:mb-16 px-4">
+        <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 md:mb-12">Nilai-Nilai Kami</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 text-center hover:shadow-xl transition-shadow duration-300">
+            <div class="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-medal text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-3">Kualitas Terbaik</h4>
+            <p class="text-gray-600">Hanya menggunakan biji kopi grade terbaik dengan proses roasting yang sempurna untuk rasa yang konsisten.</p>
+          </div>
+          
+          <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 text-center hover:shadow-xl transition-shadow duration-300">
+            <div class="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-handshake text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-3">Pelayanan Ramah</h4>
+            <p class="text-gray-600">Tim barista kami yang ramah dan berpengalaman siap melayani dengan senyuman tulus setiap hari.</p>
+          </div>
+          
+          <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 text-center hover:shadow-xl transition-shadow duration-300">
+            <div class="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-recycle text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-3">Berkelanjutan</h4>
+            <p class="text-gray-600">Berkomitmen pada praktik bisnis berkelanjutan dan mendukung petani kopi lokal.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="relative rounded-2xl overflow-hidden shadow-xl mx-4">
+        <img src="images/foto_lainnya/ABOUT%203.jpg" 
+             class="w-full h-64 md:h-80 object-cover"
+             alt="CoffeeBean Experience">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+        <div class="absolute inset-0 flex items-center">
+          <div class="px-6 md:px-10 lg:px-16 text-white max-w-3xl">
+            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Experience CoffeeBean Moments</h3>
+            <p class="text-lg md:text-xl mb-6">
+              "Temukan tempat yang tenang dan nyaman di CoffeeBean. Sempurna untuk kerja, santai, dan menikmati kopi yang dibuat khusus untukmu."
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <i class="fas fa-wifi mr-2"></i>Free WiFi
+              </span>
+              <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <i class="fas fa-plug mr-2"></i>Power Outlet
+              </span>
+              <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <i class="fas fa-music mr-2"></i>Musik Santai
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center mt-12 md:mt-16 px-4">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Siap Menikmati Kopi Terbaik?</h3>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button onclick="showSlide('menu')"
+                  class="bg-gradient-to-r from-amber-600 to-amber-500 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:from-amber-500 hover:to-amber-400 transition-all duration-300">
+            <i class="fas fa-coffee mr-2"></i>Lihat Menu
+          </button>
+          <button onclick="showSlide('home')"
+                  class="bg-white text-amber-700 border border-amber-300 px-8 py-3 rounded-full font-bold shadow hover:bg-amber-50 transition-all duration-300">
+            <i class="fas fa-home mr-2"></i>Kembali ke Home
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <section id="order" class="slide content-with-navbar hidden min-h-screen flex items-center justify-center bg-white">
   <div class="text-center">
