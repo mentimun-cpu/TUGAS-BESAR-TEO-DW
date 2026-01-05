@@ -18,7 +18,7 @@ Website ini merupakan solusi one-stop digital untuk coffee shop yang ingin mempe
 **Anggota Kelompok:**
 | No. | Nama Lengkap | NIM | Peran |
 |-----|--------------|-----|-------|
-| 1.  | [Ketut Sumantre]       | [4524210048] | [Main Branch] |
+| 1.  | [Ketut Sumantre]       | [4524210048] | [Main Branch & Tamplate Menu Branch] |
 | 2.  | [Farhan Ridwan Badawi]       | [4524210037] | [Fitur Kerangjang/pesanan] |
 | 3.  | [Fais Base Febrian]       | [4524210033] | [Main Branch] |
 | 4.  | [Vina Aisya Hafiz]       | [4524210131] | [Fitur Dashboard/Home] |
