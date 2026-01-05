@@ -56,17 +56,64 @@ Website ini merupakan solusi one-stop digital untuk coffee shop yang ingin mempe
 
 ### 4. STRUKTUR HALAMAN
 ```
-SITEMAP
-├── Home (index.html)
-├── About
-│   ├── Visi & Misi
-│   └── Tim
-├── Layanan
-│   ├── Layanan A
-│   └── Layanan B
-├── Blog
-│   └── Artikel Detail
-└── Kontak
+SITEMAP COFFEEBEAN
+│
+├── HOME (Dashboard)
+│   ├── Hero Section dengan Background Image
+│   ├── Features (3 kolom)
+│   │   ├── Biji Kopi Pilihan
+│   │   ├── Barista Berpengalaman
+│   │   └── Pengiriman Cepat
+│   ├── Statistics (4 metrik)
+│   ├── Newsletter Subscription
+│   ├── Testimonials (2 testimoni)
+│   └── Call-to-Action Buttons
+│
+├── MENU (Katalog Kopi)
+│   ├── Menu Items Grid Layout
+│   │   ├── Hot Coffee (6 item)
+│   │   │   ├── Americano
+│   │   │   ├── Cappuccino
+│   │   │   ├── Espresso
+│   │   │   ├── Latte
+│   │   │   ├── Macchiato
+│   │   │   └── Mocha
+│   │   ├── Cold Coffee (5 item)
+│   │   │   ├── Iced Americano
+│   │   │   ├── Cold Brew
+│   │   │   ├── Iced Cappuccino
+│   │   │   ├── Iced Mocha
+│   │   │   └── Black Coffee
+│   │   └── Special Coffee (4 item)
+│   │       ├── Caramel Macchiato
+│   │       ├── Affogato
+│   │       ├── Flavored Latte
+│   │       └── Vietnam Drip
+│   └── Quantity Counter System
+│
+├── ABOUT (Tentang Kami)
+│   ├── Hero Image dengan Overlay
+│   ├── Konten Tentang CoffeeBean
+│   ├── Nilai-Nilai Perusahaan
+│   │   ├── Kualitas Terbaik
+│   │   ├── Pelayanan Ramah
+│   │   └── Berkelanjutan
+│   ├── Experience Section
+│   └── Navigation Buttons
+│
+├── ORDER (Keranjang Pesanan)
+│   ├── Daftar Item Pesanan
+│   ├── Subtotal per Item
+│   ├── Total Keseluruhan
+│   ├── Checkout Button
+│   └── Empty State (jika kosong)
+│
+└── FOOTER
+    ├── Logo & Tagline
+    ├── Copyright Information
+    ├── Social Media Links
+    ├── Contact Information
+    └── Operating Hours
 ```
 
 ---
