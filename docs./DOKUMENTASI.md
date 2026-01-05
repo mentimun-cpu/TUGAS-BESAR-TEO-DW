@@ -28,14 +28,15 @@ Website ini merupakan solusi one-stop digital untuk coffee shop yang ingin mempe
 ---
 
 ### 2. TEKNOLOGI
-| Teknologi/Framework | Versi | Alasan Pemilihan |
-|HTML5                | HTML5  |Digunakan sebagai struktur utama website dan didukung oleh semua browser modern.|
-| Tailwind CSS        | v3.x (CDN)   | Mempermudah styling dengan utility class, responsif, dan mempercepat proses pengembangan UI. |
-| CSS                 | CSS3 | Digunakan untuk styling tambahan di file style.css yang tidak tercakup oleh Tailwind |
-| JavaScript          | ES6   | Digunakan untuk logika interaksi seperti navigasi halaman, keranjang belanja, dan manipulasi DOM. |
-| Font Awesome        | 6.4.0   | Menyediakan ikon siap pakai untuk mempercantik tampilan antarmuka website. |
-| GitHub              | –   | Digunakan sebagai version control dan media penyimpanan repository project agar mudah dikelola dan dikembangkan.|
-| CDN                 | –   | Digunakan untuk memuat library eksternal secara cepat tanpa instalasi lokal. |
+|  Teknologi/Framework | Versi | Alasan Pemilihan | 
+|----------------------|--------------|-----|
+| HTML5                | HTML5       | Digunakan sebagai struktur utama website dan didukung oleh semua browser modern. | 
+|  Tailwind CSS        |  v3.x (CDN)       | Mempermudah styling dengan utility class, responsif, dan mempercepat proses pengembangan UI. |
+| CSS                  | CSS#      | Digunakan untuk styling tambahan di file style.css yang tidak tercakup oleh Tailwind | 
+| JavaScript           | ES6       | Digunakan untuk logika interaksi seperti navigasi halaman, keranjang belanja, dan manipulasi DOM. |
+| Font Awesome         | 6.4.0      | Menyediakan ikon siap pakai untuk mempercantik tampilan antarmuka website.  | 
+|  GitHub              | –       | Digunakan sebagai version control dan media penyimpanan repository project agar mudah dikelola dan dikembangkan. | 
+|  CDN                 | –       | Digunakan untuk memuat library eksternal secara cepat tanpa instalasi lokal. | 
 
 
 
