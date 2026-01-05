@@ -7,8 +7,7 @@
 **Nama Proyek: Coffe Bean**  
 
 **Deskripsi Singkat:**  
-DESKRIPSI SINGKAT WEBSITE COFFEEBEAN
-  CoffeeBean adalah website e-commerce dan informasi untuk coffee shop premium yang menawarkan pengalaman digital yang lengkap untuk para pecinta kopi. Website ini menyajikan katalog menu kopi berkualitas tinggi dari berbagai kategori (Hot, Cold, Special), sistem pemesanan online dengan keranjang belanja interaktif, serta informasi lengkap tentang filosofi dan nilai-nilai coffee shop.
+CoffeeBean adalah website e-commerce dan informasi untuk coffee shop premium yang menawarkan pengalaman digital yang lengkap untuk para pecinta kopi. Website ini menyajikan katalog menu kopi berkualitas tinggi dari berbagai kategori (Hot, Cold, Special), sistem pemesanan online dengan keranjang belanja interaktif, serta informasi lengkap tentang filosofi dan nilai-nilai coffee shop.
 
   Dibangun dengan teknologi modern menggunakan Tailwind CSS untuk desain responsif dan JavaScript vanilla untuk fungsionalitas interaktif, CoffeeBean menghadirkan antarmuka yang elegan dengan animasi smooth, navigasi yang intuitif, dan pengalaman pengguna yang optimal di semua perangkat (desktop, tablet, mobile).
 
