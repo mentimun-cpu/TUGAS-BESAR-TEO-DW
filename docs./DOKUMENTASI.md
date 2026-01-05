@@ -223,24 +223,3 @@ Audit Lighthouse dilakukan menggunakan Google Chrome DevTools. Hasil menunjukkan
 - Background: `#ffffff`
 
 Kombinasi warna yang digunakan pada website memiliki rasio kontras yang cukup antara teks dan latar belakang, sehingga konten dapat dibaca dengan jelas. Penggunaan warna ini telah mendukung prinsip aksesibilitas berdasarkan pedoman WCAG (Web Content Accessibility Guidelines).
-
-
-*Skor:*
-- Performance: **79**
-- Accessibility: **82**
-- Best Practices: **100**
-- SEO: **82**
-
-Audit Lighthouse dilakukan menggunakan Google Chrome DevTools. Hasil menunjukkan bahwa website telah memenuhi sebagian besar standar aksesibilitas dan praktik terbaik pengembangan web. Skor Accessibility sebesar 82 menandakan bahwa website cukup ramah bagi pengguna, meskipun masih terdapat beberapa aspek minor yang dapat ditingkatkan.
-
----
-
-
-#### Kontras Warna (WCAG Check)
-
-**Contoh Palette:**
-- Primary: `#6f4e37` (AA pada putih)
-- Text: `#1f1f1f` (AAA pada putih)
-- Background: `#ffffff`
-
-Kombinasi warna yang digunakan pada website memiliki rasio kontras yang cukup antara teks dan latar belakang, sehingga konten dapat dibaca dengan jelas. Penggunaan warna ini telah mendukung prinsip aksesibilitas berdasarkan pedoman WCAG (Web Content Accessibility Guidelines).
