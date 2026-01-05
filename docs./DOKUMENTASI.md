@@ -164,23 +164,23 @@ NAVBAR
 #### Halaman Utama (Home)
 | Device | Screenshot |
 |--------|------------|
-| **Mobile** (375px) | ![Mobile Home](<img width="468" height="800" alt="image" src="https://github.com/user-attachments/assets/0596a176-0915-483b-b3ef-efb5ca8d3226" />)|
-| **Tablet** (768px) | ![Tablet Home](<img width="959" height="788" alt="image" src="https://github.com/user-attachments/assets/860db7ff-feef-46c4-81c0-43375655a4a5" />) |
-| **Desktop** (1440px) | ![Desktop Home](<img width="1526" height="793" alt="image" src="https://github.com/user-attachments/assets/397a246a-816f-46c0-b6b7-a653d715c216" />) |
+| **Mobile** (375px) | ![Mobile Home]<img width="468" height="800" alt="image" src="https://github.com/user-attachments/assets/0596a176-0915-483b-b3ef-efb5ca8d3226" />)|
+| **Tablet** (768px) | ![Tablet Home]<img width="959" height="788" alt="image" src="https://github.com/user-attachments/assets/860db7ff-feef-46c4-81c0-43375655a4a5" />) |
+| **Desktop** (1440px) | ![Desktop Home]<img width="1526" height="793" alt="image" src="https://github.com/user-attachments/assets/397a246a-816f-46c0-b6b7-a653d715c216" />) |
 
 #### Halaman [Menu]
 | Device | Screenshot |
 |--------|------------|
-| **Mobile** | ![Mobile Page]( <img width="466" height="801" alt="Screenshot 2026-01-05 224624" src="https://github.com/user-attachments/assets/28977ddf-a61a-4064-a8f4-f43904f719c1" />) |
-| **Tablet** | ![Tablet Page](<img width="956" height="803" alt="image" src="https://github.com/user-attachments/assets/944232e6-4efe-4f7c-8c1d-904431ef2839" />) |
-| **Desktop** | ![Desktop Page](<img width="1531" height="806" alt="image" src="https://github.com/user-attachments/assets/8e7e39eb-dff8-405b-a992-f1a65528f402" />) |
+| **Mobile** | ![Mobile Page] <img width="466" height="801" alt="Screenshot 2026-01-05 224624" src="https://github.com/user-attachments/assets/28977ddf-a61a-4064-a8f4-f43904f719c1" />) |
+| **Tablet** | ![Tablet Page]<img width="956" height="803" alt="image" src="https://github.com/user-attachments/assets/944232e6-4efe-4f7c-8c1d-904431ef2839" />) |
+| **Desktop** | ![Desktop Page]<img width="1531" height="806" alt="image" src="https://github.com/user-attachments/assets/8e7e39eb-dff8-405b-a992-f1a65528f402" />) |
 
 #### Halaman [About]
 | Device | Screenshot |
 |--------|------------|
 | **Mobile** | ![Mobile Page](link-mobile.jpg) |
 | **Tablet** | ![Tablet Page](link-tablet.jpg) |
-| **Desktop** | ![Desktop Page](<img width="1524" height="800" alt="image" src="https://github.com/user-attachments/assets/d556c658-3f1f-4321-9ed6-debdeea9209a" />) |
+| **Desktop** | ![Desktop Page]<img width="1524" height="800" alt="image" src="https://github.com/user-attachments/assets/d556c658-3f1f-4321-9ed6-debdeea9209a" />) |
 
 #### Halaman [Keranjang]
 | Device | Screenshot |
