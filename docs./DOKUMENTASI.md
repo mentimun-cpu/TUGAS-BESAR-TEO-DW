@@ -196,28 +196,29 @@ NAVBAR
 ---
 
 ### 6. BUKTI AKSESIBILITAS
-#### Hasil Audit Lighthouse
-**Halaman Utama**
-![Lighthouse Home](link-lighthouse-home.jpg)
-*Skor: Performance 95, Accessibility 100, Best Practices 100, SEO 100*
 
-**Halaman [Nama Halaman Lain]**
-![Lighthouse Other](link-lighthouse-other.jpg)
+#### Hasil Audit Lighthouse
+
+**Halaman Utama**
+![Lighthouse Home](<img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/9ff467d2-607c-423d-abd0-2c4d964be2ad" />
+)
+
+*Skor:*
+- Performance: **79**
+- Accessibility: **82**
+- Best Practices: **100**
+- SEO: **82**
+
+Audit Lighthouse dilakukan menggunakan Google Chrome DevTools. Hasil menunjukkan bahwa website telah memenuhi sebagian besar standar aksesibilitas dan praktik terbaik pengembangan web. Skor Accessibility sebesar 82 menandakan bahwa website cukup ramah bagi pengguna, meskipun masih terdapat beberapa aspek minor yang dapat ditingkatkan.
+
+---
+
 
 #### Kontras Warna (WCAG Check)
+
 **Contoh Palette:**
-- Primary: `#0066cc` (AAA pada putih)
-- Text: `#333333` (AAA pada putih)
+- Primary: `#6f4e37` (AA pada putih)
+- Text: `#1f1f1f` (AAA pada putih)
 - Background: `#ffffff`
 
-![Contrast Check](link-contrast-check.jpg)
-
----
-
-**Dibuat oleh:** [Nama Ketua/Koordinator]  
-**Tanggal:** [DD/MM/YYYY]  
-**Repositori:** [Link GitHub/GitLab]  
-
----
-
-*Laporan ini disusun untuk memenuhi tugas [Nama Mata Kuliah] - [Kelas].*
+Kombinasi warna yang digunakan pada website memiliki rasio kontras yang cukup antara teks dan latar belakang, sehingga konten dapat dibaca dengan jelas. Penggunaan warna ini telah mendukung prinsip aksesibilitas berdasarkan pedoman WCAG (Web Content Accessibility Guidelines).
