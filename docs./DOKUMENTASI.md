@@ -55,6 +55,7 @@ Website ini merupakan solusi one-stop digital untuk coffee shop yang ingin mempe
 ---
 
 ### 4. STRUKTUR HALAMAN
+#### Sitemap Website
 ```
 SITEMAP COFFEEBEAN
 │
@@ -115,7 +116,22 @@ SITEMAP COFFEEBEAN
     ├── Contact Information
     └── Operating Hours
 ```
+#### Hirarki Navigasi Website
+```
+NAVBAR
+├── HOME (default landing page)
+├── MENU (katalog produk)
+├── ABOUT (informasi perusahaan)
+└── CART ICON (akses ke ORDER page)
+```
+#### User Flow
 
+1. User masuk ke HOME → melihat fitur & testimoni
+2. Klik "Lihat Menu Kopi" → menuju MENU
+3. Pilih kopi dengan quantity counter → otomatis masuk ke cart
+4. Klik cart icon → menuju ORDER untuk review
+5. Checkout → kembali ke HOME atau MENU
+6. Bisa explore ABOUT untuk informasi coffee shop
 ---
 
 ### 5. BUKTI RESPONSIVITAS & TAMPILAN
