@@ -164,32 +164,38 @@ NAVBAR
 #### Halaman Utama (Home)
 | Device | Screenshot |
 |--------|------------|
-| **Mobile** (375px) | ![Mobile Home]<img width="468" height="800" alt="image" src="https://github.com/user-attachments/assets/0596a176-0915-483b-b3ef-efb5ca8d3226" />)|
-| **Tablet** (768px) | ![Tablet Home]<img width="959" height="788" alt="image" src="https://github.com/user-attachments/assets/860db7ff-feef-46c4-81c0-43375655a4a5" />) |
-| **Desktop** (1440px) | ![Desktop Home]<img width="1526" height="793" alt="image" src="https://github.com/user-attachments/assets/397a246a-816f-46c0-b6b7-a653d715c216" />) |
+| **Mobile** (375px) | ![Mobile Home]<img width="465" height="797" alt="image" src="https://github.com/user-attachments/assets/1ba05049-f7c5-467e-9212-438e82e778b9" />)|
+| **Tablet** (768px) | ![Tablet Home]<img width="960" height="797" alt="image" src="https://github.com/user-attachments/assets/b5ae7d7b-43f1-4276-adea-4bec4130cdc9" />) |
+| **Desktop** (1440px) | ![Desktop Home]<img width="1526" height="798" alt="image" src="https://github.com/user-attachments/assets/fc9aed73-eb15-43db-a3e9-ce28903cf0a7" />) |
 
 #### Halaman [Menu]
 | Device | Screenshot |
 |--------|------------|
-| **Mobile** | ![Mobile Page] <img width="466" height="801" alt="Screenshot 2026-01-05 224624" src="https://github.com/user-attachments/assets/28977ddf-a61a-4064-a8f4-f43904f719c1" />) |
-| **Tablet** | ![Tablet Page]<img width="956" height="803" alt="image" src="https://github.com/user-attachments/assets/944232e6-4efe-4f7c-8c1d-904431ef2839" />) |
-| **Desktop** | ![Desktop Page]<img width="1531" height="806" alt="image" src="https://github.com/user-attachments/assets/8e7e39eb-dff8-405b-a992-f1a65528f402" />) |
+| **Mobile** | ![Mobile Page] <img width="468" height="800" alt="image" src="https://github.com/user-attachments/assets/4d485a40-f35c-4304-b347-dd1cd2f8fb6b" />
+/>) |
+| **Tablet** | ![Tablet Page] <img width="959" height="804" alt="image" src="https://github.com/user-attachments/assets/d369575a-2d7a-4a0a-8fb6-38221118d03a" />
+/>) |
+| **Desktop** | ![Desktop Page] <img width="1528" height="800" alt="image" src="https://github.com/user-attachments/assets/4713c986-c160-4e11-bc44-e10373058daf" />
+/>) |
 
 #### Halaman [About]
 | Device | Screenshot |
 |--------|------------|
-| **Mobile** | ![Mobile Page](link-mobile.jpg) |
-| **Tablet** | ![Tablet Page](link-tablet.jpg) |
-| **Desktop** | ![Desktop Page]<img width="1524" height="800" alt="image" src="https://github.com/user-attachments/assets/d556c658-3f1f-4321-9ed6-debdeea9209a" />) |
+| **Mobile** | ![Mobile Page](<img width="464" height="795" alt="image" src="https://github.com/user-attachments/assets/c6e3341b-c6f1-48a3-889c-45901e1900e4" />
+) |
+| **Tablet** | ![Tablet Page](<img width="958" height="805" alt="image" src="https://github.com/user-attachments/assets/8352a918-dca4-43de-a0c7-b54012b8d7a3" />
+) |
+| **Desktop** | ![Desktop Page]<img width="1525" height="826" alt="image" src="https://github.com/user-attachments/assets/1fea395e-6a88-4e18-b10b-40c47c37582c" />
+/>) |
 
 #### Halaman [Keranjang]
 | Device | Screenshot |
 |--------|------------|
-| **Mobile** | ![Mobile Page](<img width="469" height="801" alt="image" src="https://github.com/user-attachments/assets/34ee5a4e-f054-477a-bd48-5d7023760701" />
+| **Mobile** | ![Mobile Page](<img width="467" height="797" alt="image" src="https://github.com/user-attachments/assets/34a3f6d1-7c65-44c4-a205-5acfcb2fd473" />
 ) |
-| **Tablet** | ![Tablet Page](<img width="957" height="798" alt="image" src="https://github.com/user-attachments/assets/5d027aef-15dd-4f1b-b683-082bfc994359" />
+| **Tablet** | ![Tablet Page](<img width="956" height="797" alt="image" src="https://github.com/user-attachments/assets/65f15d9f-86fc-456d-9481-87193b8d6ad7" />
 ) |
-| **Desktop** | ![Desktop Page](<img width="1530" height="802" alt="image" src="https://github.com/user-attachments/assets/b398b554-524e-45c2-97e0-3f137fbb31b1" />
+| **Desktop** | ![Desktop Page](<img width="1527" height="802" alt="image" src="https://github.com/user-attachments/assets/69b20b9e-249a-47b7-9359-e3083c838cc3" />
 ) |
 
 
