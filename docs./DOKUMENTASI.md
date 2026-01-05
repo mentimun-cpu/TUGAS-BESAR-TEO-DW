@@ -43,21 +43,41 @@ Website ini merupakan solusi one-stop digital untuk coffee shop yang ingin mempe
 ---
 
 ### 3. DAFTAR FITUR
-#### Halaman Utama
+#### Halaman Utama (Home)
 - [x] **Hero Section** dengan CTA
-- [x] Navbar dengan menu responsif
-- [x] ... [tambahkan sesuai implementasi]
+Menampilkan judul website, deskripsi singkat CoffeeBean, serta tombol CTA untuk mengarahkan pengguna ke halaman menu kopi.
+- [x] Navbar Responsif
+Navbar berisi menu Home, Menu, About, dan ikon keranjang, serta menyesuaikan tampilan pada berbagai ukuran layar (desktop dan mobile).
+- [x] Informasi Keunggulan CoffeeBean
+Menampilkan keunggulan coffee shop seperti kualitas biji kopi, barista berpengalaman, dan layanan pengiriman.
+- [X] Testimoni Pelanggan
+Menampilkan ulasan pelanggan sebagai bentuk kepercayaan dan pengalaman pengguna terhadap CoffeeBean.
 
-#### Halaman [Nama Halaman Lain]
-- [x] Fitur 1
-- [x] Fitur 2
-- [x] ...
+#### Halaman Menu (Katalog Kopi)
+- [x] Daftar Menu Kopi Dinamis
+Menampilkan daftar menu kopi berdasarkan kategori (Hot, Cold, Special) yang diambil dari data JavaScript dan ditampilkan secara dinamis ke halaman.
+- [x] Filter Kategori Menu
+Pengguna dapat memfilter menu kopi berdasarkan kategori tertentu untuk memudahkan pencarian.
+- [x] Quantity Counter (Jumlah Pesanan)
+Pengguna dapat menambah atau mengurangi jumlah pesanan untuk setiap menu kopi.
+
+#### Halaman Order (Keranjang Pesanan)
+- [x] Keranjang Belanja Interaktif
+Menampilkan daftar menu yang dipilih oleh pengguna beserta jumlah pesanan.
+- [x] Perhitungan Total Harga Otomatis
+Sistem menghitung total harga pesanan secara otomatis berdasarkan jumlah item yang dipilih.
+- [x] Tombol Checkout
+Menyediakan tombol checkout sebagai simulasi proses pemesanan kopi.
+
+#### Halaman About
+- [x] Informasi Tentang CoffeeBean
+Menampilkan deskripsi coffee shop, nilai-nilai perusahaan, dan filosofi CoffeeBean.
 
 #### Fitur Umum
-- [x] Dark/Light mode toggle
-- [x] Form validation
-- [x] Responsive layout
-
+- [x] Responsive Design
+Tampilan website menyesuaikan berbagai ukuran layar menggunakan Tailwind CSS dan media query.
+- [x] Navigasi Antar Halaman Tanpa Reload
+Perpindahan antar halaman dilakukan menggunakan JavaScript untuk memberikan pengalaman pengguna yang lebih interaktif.
 ---
 
 ### 4. STRUKTUR HALAMAN
