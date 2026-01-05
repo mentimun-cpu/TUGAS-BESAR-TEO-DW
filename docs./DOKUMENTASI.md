@@ -155,6 +155,21 @@ NAVBAR
 | **Tablet** | ![Tablet Page](link-tablet.jpg) |
 | **Desktop** | ![Desktop Page](link-desktop.jpg) |
 
+#### Halaman [Nama Halaman Lain]
+| Device | Screenshot |
+|--------|------------|
+| **Mobile** | ![Mobile Page](link-mobile.jpg) |
+| **Tablet** | ![Tablet Page](link-tablet.jpg) |
+| **Desktop** | ![Desktop Page](link-desktop.jpg) |
+
+#### Halaman [Nama Halaman Lain]
+| Device | Screenshot |
+|--------|------------|
+| **Mobile** | ![Mobile Page](link-mobile.jpg) |
+| **Tablet** | ![Tablet Page](link-tablet.jpg) |
+| **Desktop** | ![Desktop Page](link-desktop.jpg) |
+
+
 ---
 
 ### 6. BUKTI AKSESIBILITAS
