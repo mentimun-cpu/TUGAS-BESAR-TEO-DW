@@ -195,18 +195,14 @@ NAVBAR
 
 ---
 
+
 ### 6. BUKTI AKSESIBILITAS
 
 #### Hasil Audit Lighthouse
 
 **Halaman Utama**
-### 6. BUKTI AKSESIBILITAS
+<img width="1896" height="907" alt="image" src="https://github.com/user-attachments/assets/6a920e68-041d-4472-a0db-00f13e83ce1d" />
 
-#### Hasil Audit Lighthouse
-
-**Halaman Utama**
-![Lighthouse Home](<img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/9ff467d2-607c-423d-abd0-2c4d964be2ad" />
-)
 
 *Skor:*
 - Performance: **79**
